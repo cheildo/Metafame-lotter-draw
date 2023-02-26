@@ -1,4 +1,5 @@
 const tokenAddress = '0xA51Cd42FcBea4e51091740EF3b331283a89E5911';
+//const tokenAddress = '0x2A3f76215A16FBAcde4B8E042b352FcEf9B60f57';
 
 const tokenAbi = [
 	{
@@ -791,15 +792,15 @@ const tokenAbi = [
 	}
 ]
 
-const lotteryAddress = '0xE616c58d9F047922C1b3b7800a8576357020308e';
-//const lotteryAddress = '0x6E2182078fB8C8b239BA4649aa02c281d1556BC0';
+const lotteryAddress = '0x75864fD98404d1F3E59614D255dC2478a6E67514';
+//const lotteryAddress = '0xE616c58d9F047922C1b3b7800a8576357020308e';
 
 const lotteryAbi = [
 	{
 		"inputs": [
 			{
 				"internalType": "address[]",
-				"name": "newPlayers",
+				"name": "_players",
 				"type": "address[]"
 			}
 		],
@@ -836,7 +837,7 @@ const lotteryAbi = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_winners",
+				"name": "pickTimes",
 				"type": "uint256"
 			}
 		],
@@ -854,27 +855,14 @@ const lotteryAbi = [
 	},
 	{
 		"inputs": [],
-		"name": "resetCanDraw",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "resetPlayers",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_newValue",
-				"type": "uint256"
-			}
-		],
-		"name": "setPoolRequirement",
+		"inputs": [],
+		"name": "setCanDraw",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -894,7 +882,7 @@ const lotteryAbi = [
 	},
 	{
 		"inputs": [],
-		"name": "canDraw",
+		"name": "getCandraw",
 		"outputs": [
 			{
 				"internalType": "bool",
@@ -920,7 +908,7 @@ const lotteryAbi = [
 	},
 	{
 		"inputs": [],
-		"name": "getPoolRequirement",
+		"name": "getPlayersLenght",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -933,20 +921,7 @@ const lotteryAbi = [
 	},
 	{
 		"inputs": [],
-		"name": "getSizePlayers",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "getSizeWinnerPool",
+		"name": "getWinnerLenght",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -972,71 +947,7 @@ const lotteryAbi = [
 	},
 	{
 		"inputs": [],
-		"name": "isDraw",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "owner",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "players",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "poolRequirement",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "winnerPool",
 		"outputs": [
 			{
 				"internalType": "address",

@@ -2,6 +2,9 @@
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.1.6",
     "dotenv": "^16.0.3",
-    "web3": "^1.8.2"
+    "fs": "^0.0.1-security",
+    "node-cron": "^3.0.0",
+    "web3": "^1.8.2",
+    "winston": "^3.8.2"
   }
 }
