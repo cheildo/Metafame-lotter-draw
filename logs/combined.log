@@ -461,3 +461,15 @@
 2023-02-27 00:54:00: The main account 0x2C54BcE04B8250429afa3Ae15F72e703d0759582 balance is: 1.395719144779530278 BNB.
 2023-02-27 00:54:00: .......Picking the winners.....
 2023-02-27 00:54:03: The winners list was saved to WinnerList.txt
+2023-02-27 15:41:49: Program started at Mon Feb 27 2023 15:41:49 GMT+0800 (Taipei Standard Time)
+2023-02-27 15:41:49: Token address: 0xA51Cd42FcBea4e51091740EF3b331283a89E5911
+2023-02-27 15:41:49: Lottery address: 0x75864fD98404d1F3E59614D255dC2478a6E67514
+2023-02-27 15:42:00: server started
+2023-02-27 15:43:00: server started
+2023-02-27 15:44:00: server started
+2023-02-27 15:45:00: server started
+2023-02-27 15:45:01: ..............Starting lottery draw........
+2023-02-27 15:45:01: Gas estimation to draw the lottery is 109280
+2023-02-27 15:45:01: The main account 0x2C54BcE04B8250429afa3Ae15F72e703d0759582 balance is: 1.392457444779530278 BNB.
+2023-02-27 15:45:01: .......Picking the winners.....
+2023-02-27 15:45:04: The winners list was saved to WinnerList.txt
