@@ -183,11 +183,18 @@ async function timer(){
     else {
         console.log("The lottery is not ready to draw yet");
         logger.debug("The lottery is not ready to draw yet");
+        await lotteryContract.methods.getCurrentPrize().call().then( function(res) {
+            console.log(`The current prize is  ${web3.utils.fromWei(res, 'ether')} BMF`);
+        })
+        .catch(function(err){ 
+            console.log(err);
+            logger.error(err)
+        });
     }
     })
 }
 
-// Schedule tasks to be run on the server.
+// Schedule tasks to run on the server.
 const runServer= async () => {cron.schedule('* * * * *', async() => timer());}
 
 require("dotenv").config();
